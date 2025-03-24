@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreinAbo.Persistence", "TreinAbo.Persistence\TreinAbo.Persistence.csproj", "{2D732AAA-7392-4061-9733-7DA7F7CD9FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreinAbo.Api", "TreinAbo.Api\TreinAbo.Api.csproj", "{91B588C9-AFEA-4A71-89A0-606360C70495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D732AAA-7392-4061-9733-7DA7F7CD9FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D732AAA-7392-4061-9733-7DA7F7CD9FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D732AAA-7392-4061-9733-7DA7F7CD9FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D732AAA-7392-4061-9733-7DA7F7CD9FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B588C9-AFEA-4A71-89A0-606360C70495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B588C9-AFEA-4A71-89A0-606360C70495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B588C9-AFEA-4A71-89A0-606360C70495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B588C9-AFEA-4A71-89A0-606360C70495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {458AC9CD-CDD9-44B4-863F-3DCFB01E64E3}
+	EndGlobalSection
+EndGlobal
