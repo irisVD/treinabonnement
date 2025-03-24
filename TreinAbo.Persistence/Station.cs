@@ -11,5 +11,5 @@ public partial class Station
 
     public byte[] VerwarmdeWachtruimte { get; set; } = null!;
 
-    public virtual ICollection<Abonnementen> IdAbonnements { get; set; } = new List<Abonnementen>();
+    public virtual ICollection<Abonnement> IdAbonnements { get; set; } = new List<Abonnement>();
 }

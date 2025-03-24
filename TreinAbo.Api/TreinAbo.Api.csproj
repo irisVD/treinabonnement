@@ -4,4 +4,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../TreinAbo.Api.Contracts/TreinAbo.Api.Contracts.csproj" />
+    <ProjectReference Include="../TreinAbo.Persistence/TreinAbo.Persistence.csproj" />
+    <ProjectReference Include="../TreinAbo.Services/TreinAbo.Services.csproj" />
+  </ItemGroup>
 </Project>

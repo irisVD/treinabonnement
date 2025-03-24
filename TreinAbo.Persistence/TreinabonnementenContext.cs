@@ -16,9 +16,9 @@ public partial class TreinabonnementenContext : DbContext
     {
     }
 
-    public virtual DbSet<Abonnementen> Abonnementens { get; set; }
+    public virtual DbSet<Abonnement> Abonnementen { get; set; }
 
-    public virtual DbSet<Klanten> Klantens { get; set; }
+    public virtual DbSet<Klant> Klanten { get; set; }
 
     public virtual DbSet<Station> Stations { get; set; }
 
@@ -32,7 +32,7 @@ public partial class TreinabonnementenContext : DbContext
             .UseCollation("utf8mb4_0900_ai_ci")
             .HasCharSet("utf8mb4");
 
-        modelBuilder.Entity<Abonnementen>(entity =>
+        modelBuilder.Entity<Abonnement>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
@@ -45,7 +45,7 @@ public partial class TreinabonnementenContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IdKlant).HasColumnName("idKlant");
             entity.Property(e => e.Klasse).HasColumnName("klasse");
-            entity.Property(e => e.PeriodeGeldig)
+            entity.Property(e => e.EindDatum)
                 .HasColumnType("datetime")
                 .HasColumnName("periodeGeldig");
             entity.Property(e => e.StartDatum)
@@ -63,7 +63,7 @@ public partial class TreinabonnementenContext : DbContext
                         .HasForeignKey("IdStation")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("fk_idStation"),
-                    l => l.HasOne<Abonnementen>().WithMany()
+                    l => l.HasOne<Abonnement>().WithMany()
                         .HasForeignKey("IdAbonnement")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("fk_idAbonnement"),
@@ -79,7 +79,7 @@ public partial class TreinabonnementenContext : DbContext
                     });
         });
 
-        modelBuilder.Entity<Klanten>(entity =>
+        modelBuilder.Entity<Klant>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 

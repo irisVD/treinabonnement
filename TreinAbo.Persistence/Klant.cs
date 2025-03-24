@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace TreinAbo.Persistence;
 
-public partial class Klanten
+public partial class Klant
 {
     public int Id { get; set; }
 
@@ -13,5 +13,5 @@ public partial class Klanten
 
     public string Email { get; set; } = null!;
 
-    public virtual ICollection<Abonnementen> Abonnementens { get; set; } = new List<Abonnementen>();
+    public virtual ICollection<Abonnement> Abonnementens { get; set; } = new List<Abonnement>();
 }

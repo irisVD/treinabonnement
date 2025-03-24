@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreinAbo.Persistence", "Tre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreinAbo.Api", "TreinAbo.Api\TreinAbo.Api.csproj", "{91B588C9-AFEA-4A71-89A0-606360C70495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreinAbo.Services", "TreinAbo.Services\TreinAbo.Services.csproj", "{B822317B-B4D5-4C16-9AA7-5D1475B56F3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreinAbo.Api.Contracts", "TreinAbo.Api.Contracts\TreinAbo.Api.Contracts.csproj", "{75852564-DE61-4F9F-9FAE-E2E85828C593}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{91B588C9-AFEA-4A71-89A0-606360C70495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91B588C9-AFEA-4A71-89A0-606360C70495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91B588C9-AFEA-4A71-89A0-606360C70495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B822317B-B4D5-4C16-9AA7-5D1475B56F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B822317B-B4D5-4C16-9AA7-5D1475B56F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B822317B-B4D5-4C16-9AA7-5D1475B56F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B822317B-B4D5-4C16-9AA7-5D1475B56F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75852564-DE61-4F9F-9FAE-E2E85828C593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75852564-DE61-4F9F-9FAE-E2E85828C593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75852564-DE61-4F9F-9FAE-E2E85828C593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75852564-DE61-4F9F-9FAE-E2E85828C593}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
