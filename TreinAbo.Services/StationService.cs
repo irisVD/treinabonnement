@@ -4,7 +4,7 @@ using TreinAbo.Persistence;
 
 namespace TreinAbo.Services;
 
-public class StationService
+public class StationService(TreinabonnementenContext treinAboContext) : IStationService
 {
 public StationResponseContract Create(StationRequestContract request)
     {
@@ -52,8 +52,7 @@ public StationResponseContract Create(StationRequestContract request)
         }
 
         entity.Naam = contract.Naam;
-        entity.Voornaam = contract.Voornaam;
-        entity.Email = contract.Email;
+        entity.VerwarmdeWachtruimte = contract.VerwarmdeWachtruimte;
 
         treinAboContext.Stations.Update(entity);
         treinAboContext.SaveChanges();
@@ -66,8 +65,7 @@ public StationResponseContract Create(StationRequestContract request)
         {
             Id = entity.Id,
             Naam = entity.Naam,
-            Voornaam = entity.Voornaam,
-            Email = entity.Email
+            VerwarmdeWachtruimte = entity.VerwarmdeWachtruimte
         };
     }
 }

@@ -3,11 +3,11 @@ using TreinAbo.Api.Contracts;
 
 namespace TreinAbo.Services;
 
-public interface IStationService
+public interface IKlantService
 {
-    StationResponseContract? GetById(int id);
+    KlantResponseContract? GetById(int id);
     void Delete(int id);
-    List<StationResponseContract> GetAll();
-    StationResponseContract Create(StationRequestContract request);
-    void Update(int id, StationRequestContract contract);
+    List<KlantResponseContract> GetAll();
+    KlantResponseContract Create(KlantRequestContract request);
+    void Update(int id, KlantRequestContract contract);
 }

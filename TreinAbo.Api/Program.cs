@@ -16,9 +16,10 @@ public class Program
         var serverVersion = new MySqlServerVersion(ServerVersion.AutoDetect(connectionString));
         builder.Services.AddDbContext<TreinabonnementenContext>(options =>
             options.UseMySql(connectionString, serverVersion));
-        
+
+        builder.Services.AddScoped<IKlantService, KlantService>();
         builder.Services.AddScoped<IStationService, StationService>();
-    
+
         builder.Services.AddControllers();
 
         var app = builder.Build();
