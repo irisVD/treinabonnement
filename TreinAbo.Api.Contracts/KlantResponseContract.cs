@@ -4,8 +4,8 @@ namespace TreinAbo.Api.Contracts;
 
 public class KlantResponseContract
 {
-    public int Id { get; set; }
-    public string Naam { get; set; } = null!;
-    public string Voornaam { get; set; } = null!;
-    public string Email { get; set; } = null!;
+    public required int Id { get; set; }
+    public required string Naam { get; set; } = null!;
+    public required string Voornaam { get; set; } = null!;
+    public required string Email { get; set; } = null!;
 }
