@@ -3,7 +3,7 @@ using TreinAbo.Api.Contracts;
 using TreinAbo.Persistence;
 
 namespace TreinAbo.Services;
-
+/*
 public class AbonnementService(TreinabonnementenContext treinAboContext): IAbonnementService
 {
     public AbonnementResponseContract Create(AbonnementRequestContract request)
@@ -79,3 +79,4 @@ public class AbonnementService(TreinabonnementenContext treinAboContext): IAbonn
         };
     }
 }
+*/

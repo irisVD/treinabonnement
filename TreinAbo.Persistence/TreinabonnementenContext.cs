@@ -110,8 +110,7 @@ public partial class TreinabonnementenContext : DbContext
                 .HasMaxLength(45)
                 .HasColumnName("naam");
             entity.Property(e => e.VerwarmdeWachtruimte)
-                .HasColumnType("blob")
-                .HasConversion(v => v ? new byte[] { 1 } : new byte[] { 0 }, v => v[0] == 1)
+                .HasColumnType("TINYINT(1)")
                 .HasColumnName("verwarmdeWachtruimte");
         });
 

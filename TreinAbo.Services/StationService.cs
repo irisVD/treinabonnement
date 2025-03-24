@@ -11,7 +11,7 @@ public StationResponseContract Create(StationRequestContract request)
         var entity = new Station()
         {
             Naam = request.Naam,
-            
+            VerwarmdeWachtruimte = request.VerwarmdeWachtruimte
         };
 
         treinAboContext.Stations.Add(entity);
