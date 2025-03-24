@@ -15,7 +15,7 @@ public partial class Abonnement
 
     public int? IdKlant { get; set; }
 
-    public virtual Klant? IdKlantNavigation { get; set; }
+    public virtual Klant? Klant { get; set; }
 
-    public virtual ICollection<Station> IdStations { get; set; } = new List<Station>();
+    public virtual ICollection<Station> Stations { get; set; } = new List<Station>();
 }

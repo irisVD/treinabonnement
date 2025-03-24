@@ -13,5 +13,5 @@ public partial class Klant
 
     public string Email { get; set; } = null!;
 
-    public virtual ICollection<Abonnement> Abonnementens { get; set; } = new List<Abonnement>();
+    public virtual ICollection<Abonnement> Abonnementen { get; set; } = new List<Abonnement>();
 }

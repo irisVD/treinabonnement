@@ -52,13 +52,13 @@ public partial class TreinabonnementenContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("startDatum");
 
-            entity.HasOne(d => d.IdKlantNavigation).WithMany(p => p.Abonnementens)
+            entity.HasOne(d => d.Klant).WithMany(p => p.Abonnementen)
                 .HasForeignKey(d => d.IdKlant)
                 .HasConstraintName("idKlant");
 
-            entity.HasMany(d => d.IdStations).WithMany(p => p.IdAbonnements)
+            entity.HasMany(d => d.Stations).WithMany(p => p.Abonnementen)
                 .UsingEntity<Dictionary<string, object>>(
-                    "AbonnementenStation",
+                    "AbonnementenStations",
                     r => r.HasOne<Station>().WithMany()
                         .HasForeignKey("IdStation")
                         .OnDelete(DeleteBehavior.ClientSetNull)
@@ -111,6 +111,7 @@ public partial class TreinabonnementenContext : DbContext
                 .HasColumnName("naam");
             entity.Property(e => e.VerwarmdeWachtruimte)
                 .HasColumnType("blob")
+                .HasConversion(v => v ? new byte[] { 1 } : new byte[] { 0 }, v => v[0] == 1)
                 .HasColumnName("verwarmdeWachtruimte");
         });
 

@@ -9,7 +9,7 @@ public partial class Station
 
     public string Naam { get; set; } = null!;
 
-    public byte[] VerwarmdeWachtruimte { get; set; } = null!;
+    public bool VerwarmdeWachtruimte { get; set; } = false!;
 
-    public virtual ICollection<Abonnement> IdAbonnements { get; set; } = new List<Abonnement>();
+    public virtual ICollection<Abonnement> Abonnementen { get; set; } = new List<Abonnement>();
 }

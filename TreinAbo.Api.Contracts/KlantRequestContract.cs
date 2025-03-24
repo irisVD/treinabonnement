@@ -5,10 +5,10 @@ namespace TreinAbo.Api.Contracts;
 
 public class KlantRequestContract
 {
-    [MaxLength(30)]
+    [MaxLength(45)]
     public required string Naam { get; set; } = null!;
 
-    [MaxLength(30)]
+    [MaxLength(45)]
     public required string Voornaam { get; set; } = null!;
 
     [EmailAddress]
